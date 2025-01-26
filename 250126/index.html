@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clamp</title>
+    <style>
+        h1 {
+            text-align: center;
+            font-weight: 900;
+            font-size: clamp(50px, 10vw, 100px);
+        }
+
+        .div_01 {
+            text-align: center;
+        }
+
+        .div_01 > button {
+            background-color: black;
+            color: white;
+            border-radius: .3125rem;
+            width: clamp(100px, 30vw, 200px);
+            height: clamp(20px, 10vw, 40px);
+        }
+
+        .div_01 > button > a {
+            color: inherit;
+            text-decoration: none;
+            font-size: clamp(1rem, 0.904rem + 0.48vw, 1.5rem);
+        }
+    </style>
+</head>
+<body>
+    <h1>This Text Is Fluid</h1>
+    <div class="div_01">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <button><a href="#">Start for free</a></button>
+    </div>
+</body>
+</html>
