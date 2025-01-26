@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/1b5a8228b3.js" crossorigin="anonymous"></script><!--fontawesome-->
+
+    <link rel="icon" href="image/title.png" type="image/png"><!--파비콘 지정-->
+    <link rel="stylesheet" href="css/style.css"><!--css 지정-->
+    <title>에어컨천국</title>
+</head>
+<body>
+    <header class = "header_0">
+        <nav>
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+            <ul id = "menuList">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu-icon">
+                <i class="fas fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+    </header>  
+    
+    <script>
+        let menuList = document.getElementById("menuList")
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "300px";
+            }
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    
+</body>
+</html>
